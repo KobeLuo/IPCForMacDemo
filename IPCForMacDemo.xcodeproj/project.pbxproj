@@ -14,6 +14,7 @@
 		4AE9EFE222487F3F00947B8F /* IPC_XPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFE122487F3F00947B8F /* IPC_XPC.m */; };
 		4AE9EFE422487F3F00947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFE322487F3F00947B8F /* main.m */; };
 		4AE9EFE822487F3F00947B8F /* IPC-XPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4AE9EFF02248A59E00947B8F /* KBIPCForXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		4AE9EFE322487F3F00947B8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AE9EFE522487F3F00947B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE9EFED22487FB000947B8F /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		4AE9EFEE2248A59E00947B8F /* KBIPCForXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBIPCForXPC.h; sourceTree = "<group>"; };
+		4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBIPCForXPC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 			children = (
 				4AE9EFB322487DE000947B8F /* AppDelegate.h */,
 				4AE9EFB422487DE000947B8F /* AppDelegate.m */,
+				4AE9EFEE2248A59E00947B8F /* KBIPCForXPC.h */,
+				4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */,
 				4AE9EFED22487FB000947B8F /* CommonHeader.h */,
 				4AE9EFB622487DE200947B8F /* Assets.xcassets */,
 				4AE9EFB822487DE200947B8F /* MainMenu.xib */,
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE9EFBD22487DE200947B8F /* main.m in Sources */,
+				4AE9EFF02248A59E00947B8F /* KBIPCForXPC.m in Sources */,
 				4AE9EFB522487DE000947B8F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CommonHeader.h"
 // The protocol that this service will vend as its API. This header file will also need to be visible to the process hosting the service.
-@protocol IPC_XPCProtocol
+@protocol IPC_XPCServiceProtocol
 
 // Replace the API of this protocol with an API appropriate to the service you are vending.
 - (void)upperCaseString:(NSString *)aString withReply:(void (^)(NSString *))reply;
-    
+- (void)operateWith:(MessageType)type
+             action:(IPCAction)action
+               info:(NSString *)info
+           callback:(void (^)(NSString *))reply;
+@end
+
+@protocol IPC_XPCHostProtocol
+
+- (void)messageDidCall:(NSString *)msg reply:(void (^)(BOOL))reply;
+
 @end
 
 /*

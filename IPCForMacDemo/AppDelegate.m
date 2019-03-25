@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "KBIPCForXPC.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()  {
+    
+    KBIPCForXPC *_xpc;
+}
 
 @property (weak) IBOutlet NSWindow *window;
 @end
@@ -22,6 +26,24 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (IBAction)XPCAction:(id)sender {
+    
+    if (!_xpc) { _xpc = [KBIPCForXPC new]; }
+    [_xpc sendMessageToXPC];
+}
+- (IBAction)machPortAction:(id)sender {
+}
+- (IBAction)socketAction:(id)sender {
+}
+- (IBAction)notificationAction:(id)sender {
+}
+- (IBAction)appleEventAction:(id)sender {
+}
+- (IBAction)distributesAction:(id)sender {
+}
+- (IBAction)pasteboardAction:(id)sender {
 }
 
 
