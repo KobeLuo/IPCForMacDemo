@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KBIPCForXPC.h"
-
+#import "MachPortConnector.h"
 @interface AppDelegate ()  {
     
     KBIPCForXPC *_xpc;
@@ -21,6 +21,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [MachPortConnector connect];
 }
 
 
@@ -34,6 +35,15 @@
     [_xpc sendMessageToXPC];
 }
 - (IBAction)machPortAction:(id)sender {
+    
+    NSLog(@"call client");
+    NSString *result = [MachPortConnector sendMessage:@"call client"];
+    NSLog(@"Mach port return:%@",result);
+    [MachPortConnector observeMessage:^NSString *(NSString * _Nonnull c, int msgid) {
+        
+        NSLog(@"Mach port invoke:%@",c);
+        return @"Host did received message";
+    }];
 }
 - (IBAction)socketAction:(id)sender {
 }
