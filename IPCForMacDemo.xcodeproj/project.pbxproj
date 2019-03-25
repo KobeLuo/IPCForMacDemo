@@ -11,7 +11,34 @@
 		4AE9EFB722487DE200947B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9EFB622487DE200947B8F /* Assets.xcassets */; };
 		4AE9EFBA22487DE200947B8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9EFB822487DE200947B8F /* MainMenu.xib */; };
 		4AE9EFBD22487DE200947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFBC22487DE200947B8F /* main.m */; };
+		4AE9EFE222487F3F00947B8F /* IPC_XPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFE122487F3F00947B8F /* IPC_XPC.m */; };
+		4AE9EFE422487F3F00947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFE322487F3F00947B8F /* main.m */; };
+		4AE9EFE822487F3F00947B8F /* IPC-XPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AE9EFE622487F3F00947B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE9EFA822487DE000947B8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE9EFDC22487F3F00947B8F;
+			remoteInfo = "IPC-XPC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4AE9EFEC22487F3F00947B8F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				4AE9EFE822487F3F00947B8F /* IPC-XPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4AE9EFB022487DE000947B8F /* IPCForMacDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPCForMacDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,24 @@
 		4AE9EFBB22487DE200947B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE9EFBC22487DE200947B8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AE9EFBE22487DE200947B8F /* IPCForMacDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IPCForMacDemo.entitlements; sourceTree = "<group>"; };
+		4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "IPC-XPC.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE9EFDF22487F3F00947B8F /* IPC_XPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPC_XPCProtocol.h; sourceTree = "<group>"; };
+		4AE9EFE022487F3F00947B8F /* IPC_XPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPC_XPC.h; sourceTree = "<group>"; };
+		4AE9EFE122487F3F00947B8F /* IPC_XPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPC_XPC.m; sourceTree = "<group>"; };
+		4AE9EFE322487F3F00947B8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AE9EFE522487F3F00947B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE9EFED22487FB000947B8F /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4AE9EFAD22487DE000947B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE9EFDA22487F3F00947B8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE9EFB222487DE000947B8F /* IPCForMacDemo */,
+				4AE9EFDE22487F3F00947B8F /* IPC-XPC */,
 				4AE9EFB122487DE000947B8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE9EFB022487DE000947B8F /* IPCForMacDemo.app */,
+				4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +99,7 @@
 			children = (
 				4AE9EFB322487DE000947B8F /* AppDelegate.h */,
 				4AE9EFB422487DE000947B8F /* AppDelegate.m */,
+				4AE9EFED22487FB000947B8F /* CommonHeader.h */,
 				4AE9EFB622487DE200947B8F /* Assets.xcassets */,
 				4AE9EFB822487DE200947B8F /* MainMenu.xib */,
 				4AE9EFBB22487DE200947B8F /* Info.plist */,
@@ -63,6 +107,18 @@
 				4AE9EFBE22487DE200947B8F /* IPCForMacDemo.entitlements */,
 			);
 			path = IPCForMacDemo;
+			sourceTree = "<group>";
+		};
+		4AE9EFDE22487F3F00947B8F /* IPC-XPC */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9EFDF22487F3F00947B8F /* IPC_XPCProtocol.h */,
+				4AE9EFE022487F3F00947B8F /* IPC_XPC.h */,
+				4AE9EFE122487F3F00947B8F /* IPC_XPC.m */,
+				4AE9EFE322487F3F00947B8F /* main.m */,
+				4AE9EFE522487F3F00947B8F /* Info.plist */,
+			);
+			path = "IPC-XPC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,15 +131,34 @@
 				4AE9EFAC22487DE000947B8F /* Sources */,
 				4AE9EFAD22487DE000947B8F /* Frameworks */,
 				4AE9EFAE22487DE000947B8F /* Resources */,
+				4AE9EFEC22487F3F00947B8F /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4AE9EFE722487F3F00947B8F /* PBXTargetDependency */,
 			);
 			name = IPCForMacDemo;
 			productName = IPCForMacDemo;
 			productReference = 4AE9EFB022487DE000947B8F /* IPCForMacDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4AE9EFDC22487F3F00947B8F /* IPC-XPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE9EFEB22487F3F00947B8F /* Build configuration list for PBXNativeTarget "IPC-XPC" */;
+			buildPhases = (
+				4AE9EFD922487F3F00947B8F /* Sources */,
+				4AE9EFDA22487F3F00947B8F /* Frameworks */,
+				4AE9EFDB22487F3F00947B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IPC-XPC";
+			productName = "IPC-XPC";
+			productReference = 4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +170,9 @@
 				ORGANIZATIONNAME = KobeLuo;
 				TargetAttributes = {
 					4AE9EFAF22487DE000947B8F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4AE9EFDC22487F3F00947B8F = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -113,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				4AE9EFAF22487DE000947B8F /* IPCForMacDemo */,
+				4AE9EFDC22487F3F00947B8F /* IPC-XPC */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +203,13 @@
 			files = (
 				4AE9EFB722487DE200947B8F /* Assets.xcassets in Resources */,
 				4AE9EFBA22487DE200947B8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE9EFDB22487F3F00947B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +225,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AE9EFD922487F3F00947B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE9EFE422487F3F00947B8F /* main.m in Sources */,
+				4AE9EFE222487F3F00947B8F /* IPC_XPC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AE9EFE722487F3F00947B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE9EFDC22487F3F00947B8F /* IPC-XPC */;
+			targetProxy = 4AE9EFE622487F3F00947B8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4AE9EFB822487DE200947B8F /* MainMenu.xib */ = {
@@ -302,6 +405,32 @@
 			};
 			name = Release;
 		};
+		4AE9EFE922487F3F00947B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24K4NVLUY4;
+				INFOPLIST_FILE = "IPC-XPC/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.koebluo.com.IPC-XPC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4AE9EFEA22487F3F00947B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24K4NVLUY4;
+				INFOPLIST_FILE = "IPC-XPC/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.koebluo.com.IPC-XPC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +448,15 @@
 			buildConfigurations = (
 				4AE9EFC222487DE200947B8F /* Debug */,
 				4AE9EFC322487DE200947B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE9EFEB22487F3F00947B8F /* Build configuration list for PBXNativeTarget "IPC-XPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE9EFE922487F3F00947B8F /* Debug */,
+				4AE9EFEA22487F3F00947B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
