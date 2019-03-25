@@ -15,13 +15,17 @@
 		4AE9EFE422487F3F00947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFE322487F3F00947B8F /* main.m */; };
 		4AE9EFE822487F3F00947B8F /* IPC-XPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4AE9EFF02248A59E00947B8F /* KBIPCForXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */; };
-		4AE9EFF32248A95400947B8F /* KBIPCForMachPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFF22248A95400947B8F /* KBIPCForMachPort.m */; };
 		4AE9EFFC2248A9A000947B8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9EFFB2248A9A000947B8F /* AppDelegate.m */; };
 		4AE9EFFE2248A9A100947B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9EFFD2248A9A100947B8F /* Assets.xcassets */; };
 		4AE9F0012248A9A100947B8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9EFFF2248A9A100947B8F /* MainMenu.xib */; };
 		4AE9F0042248A9A100947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F0032248A9A100947B8F /* main.m */; };
 		4AE9F00B2248C01300947B8F /* MachPortConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F00A2248C01300947B8F /* MachPortConnector.m */; };
 		4AE9F00C2248C01300947B8F /* MachPortConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F00A2248C01300947B8F /* MachPortConnector.m */; };
+		4AE9F00F2248D4D400947B8F /* KBIPCForDO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F00E2248D4D400947B8F /* KBIPCForDO.m */; };
+		4AE9F0182248D55300947B8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F0172248D55300947B8F /* AppDelegate.m */; };
+		4AE9F01A2248D55400947B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9F0192248D55400947B8F /* Assets.xcassets */; };
+		4AE9F01D2248D55400947B8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9F01B2248D55400947B8F /* MainMenu.xib */; };
+		4AE9F0202248D55400947B8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F01F2248D55400947B8F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +70,6 @@
 		4AE9EFED22487FB000947B8F /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		4AE9EFEE2248A59E00947B8F /* KBIPCForXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBIPCForXPC.h; sourceTree = "<group>"; };
 		4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBIPCForXPC.m; sourceTree = "<group>"; };
-		4AE9EFF12248A95400947B8F /* KBIPCForMachPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBIPCForMachPort.h; sourceTree = "<group>"; };
-		4AE9EFF22248A95400947B8F /* KBIPCForMachPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBIPCForMachPort.m; sourceTree = "<group>"; };
 		4AE9EFF82248A9A000947B8F /* IPC_MachPort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPC_MachPort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE9EFFA2248A9A000947B8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AE9EFFB2248A9A000947B8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +80,17 @@
 		4AE9F0052248A9A100947B8F /* IPC_MachPort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IPC_MachPort.entitlements; sourceTree = "<group>"; };
 		4AE9F0092248C01300947B8F /* MachPortConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortConnector.h; sourceTree = "<group>"; };
 		4AE9F00A2248C01300947B8F /* MachPortConnector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortConnector.m; sourceTree = "<group>"; };
+		4AE9F00D2248D4D400947B8F /* KBIPCForDO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBIPCForDO.h; sourceTree = "<group>"; };
+		4AE9F00E2248D4D400947B8F /* KBIPCForDO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBIPCForDO.m; sourceTree = "<group>"; };
+		4AE9F0142248D55300947B8F /* IPC_DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPC_DO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE9F0162248D55300947B8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AE9F0172248D55300947B8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AE9F0192248D55400947B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE9F01C2248D55400947B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4AE9F01E2248D55400947B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE9F01F2248D55400947B8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AE9F0212248D55400947B8F /* IPC_DO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IPC_DO.entitlements; sourceTree = "<group>"; };
+		4AE9F0252248D59800947B8F /* KBIPCForDOProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBIPCForDOProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AE9F0112248D55300947B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +131,7 @@
 				4AE9EFB222487DE000947B8F /* IPCForMacDemo */,
 				4AE9EFDE22487F3F00947B8F /* IPC-XPC */,
 				4AE9EFF92248A9A000947B8F /* IPC_MachPort */,
+				4AE9F0152248D55300947B8F /* IPC_DO */,
 				4AE9EFB122487DE000947B8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +142,7 @@
 				4AE9EFB022487DE000947B8F /* IPCForMacDemo.app */,
 				4AE9EFDD22487F3F00947B8F /* IPC-XPC.xpc */,
 				4AE9EFF82248A9A000947B8F /* IPC_MachPort.app */,
+				4AE9F0142248D55300947B8F /* IPC_DO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,8 +154,9 @@
 				4AE9EFB422487DE000947B8F /* AppDelegate.m */,
 				4AE9EFEE2248A59E00947B8F /* KBIPCForXPC.h */,
 				4AE9EFEF2248A59E00947B8F /* KBIPCForXPC.m */,
-				4AE9EFF12248A95400947B8F /* KBIPCForMachPort.h */,
-				4AE9EFF22248A95400947B8F /* KBIPCForMachPort.m */,
+				4AE9F0252248D59800947B8F /* KBIPCForDOProtocol.h */,
+				4AE9F00D2248D4D400947B8F /* KBIPCForDO.h */,
+				4AE9F00E2248D4D400947B8F /* KBIPCForDO.m */,
 				4AE9EFED22487FB000947B8F /* CommonHeader.h */,
 				4AE9EFB622487DE200947B8F /* Assets.xcassets */,
 				4AE9EFB822487DE200947B8F /* MainMenu.xib */,
@@ -170,6 +193,20 @@
 				4AE9F00A2248C01300947B8F /* MachPortConnector.m */,
 			);
 			path = IPC_MachPort;
+			sourceTree = "<group>";
+		};
+		4AE9F0152248D55300947B8F /* IPC_DO */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9F0162248D55300947B8F /* AppDelegate.h */,
+				4AE9F0172248D55300947B8F /* AppDelegate.m */,
+				4AE9F0192248D55400947B8F /* Assets.xcassets */,
+				4AE9F01B2248D55400947B8F /* MainMenu.xib */,
+				4AE9F01E2248D55400947B8F /* Info.plist */,
+				4AE9F01F2248D55400947B8F /* main.m */,
+				4AE9F0212248D55400947B8F /* IPC_DO.entitlements */,
+			);
+			path = IPC_DO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +265,23 @@
 			productReference = 4AE9EFF82248A9A000947B8F /* IPC_MachPort.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4AE9F0132248D55300947B8F /* IPC_DO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE9F0222248D55400947B8F /* Build configuration list for PBXNativeTarget "IPC_DO" */;
+			buildPhases = (
+				4AE9F0102248D55300947B8F /* Sources */,
+				4AE9F0112248D55300947B8F /* Frameworks */,
+				4AE9F0122248D55300947B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPC_DO;
+			productName = IPC_DO;
+			productReference = 4AE9F0142248D55300947B8F /* IPC_DO.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +313,14 @@
 							};
 						};
 					};
+					4AE9F0132248D55300947B8F = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 4AE9EFAB22487DE000947B8F /* Build configuration list for PBXProject "IPCForMacDemo" */;
@@ -277,6 +339,7 @@
 				4AE9EFAF22487DE000947B8F /* IPCForMacDemo */,
 				4AE9EFDC22487F3F00947B8F /* IPC-XPC */,
 				4AE9EFF72248A9A000947B8F /* IPC_MachPort */,
+				4AE9F0132248D55300947B8F /* IPC_DO */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +370,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AE9F0122248D55300947B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE9F01A2248D55400947B8F /* Assets.xcassets in Resources */,
+				4AE9F01D2248D55400947B8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -316,9 +388,9 @@
 			files = (
 				4AE9EFBD22487DE200947B8F /* main.m in Sources */,
 				4AE9EFF02248A59E00947B8F /* KBIPCForXPC.m in Sources */,
+				4AE9F00F2248D4D400947B8F /* KBIPCForDO.m in Sources */,
 				4AE9F00B2248C01300947B8F /* MachPortConnector.m in Sources */,
 				4AE9EFB522487DE000947B8F /* AppDelegate.m in Sources */,
-				4AE9EFF32248A95400947B8F /* KBIPCForMachPort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +410,15 @@
 				4AE9F00C2248C01300947B8F /* MachPortConnector.m in Sources */,
 				4AE9F0042248A9A100947B8F /* main.m in Sources */,
 				4AE9EFFC2248A9A000947B8F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE9F0102248D55300947B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE9F0202248D55400947B8F /* main.m in Sources */,
+				4AE9F0182248D55300947B8F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +445,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4AE9F0002248A9A100947B8F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4AE9F01B2248D55400947B8F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE9F01C2248D55400947B8F /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -587,6 +676,40 @@
 			};
 			name = Release;
 		};
+		4AE9F0232248D55400947B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24K4NVLUY4;
+				INFOPLIST_FILE = IPC_DO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.koebluo.com.IPC-DO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AE9F0242248D55400947B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24K4NVLUY4;
+				INFOPLIST_FILE = IPC_DO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.koebluo.com.IPC-DO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,6 +745,15 @@
 			buildConfigurations = (
 				4AE9F0072248A9A100947B8F /* Debug */,
 				4AE9F0082248A9A100947B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE9F0222248D55400947B8F /* Build configuration list for PBXNativeTarget "IPC_DO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE9F0232248D55400947B8F /* Debug */,
+				4AE9F0242248D55400947B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

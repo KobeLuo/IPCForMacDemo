@@ -9,9 +9,12 @@
 #import "AppDelegate.h"
 #import "KBIPCForXPC.h"
 #import "MachPortConnector.h"
+#import "KBIPCForDO.h"
+#import "KBIPCForDO.h"
 @interface AppDelegate ()  {
     
     KBIPCForXPC *_xpc;
+    KBIPCForDO *_do;
 }
 
 @property (weak) IBOutlet NSWindow *window;
@@ -52,8 +55,14 @@
 - (IBAction)appleEventAction:(id)sender {
 }
 - (IBAction)distributesAction:(id)sender {
+    
+    if (!_do) { _do = [KBIPCForDO new]; }
+    [_do sendMessage];
 }
 - (IBAction)pasteboardAction:(id)sender {
+    
+    id proxy = (id)[NSConnection rootProxyForConnectionWithRegisteredName:RegistName host:nil];
+    NSLog(@"%@",proxy);
 }
 
 
